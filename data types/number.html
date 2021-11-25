@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number data type</title>
+</head>
+<body>
+    <script>
+        // 2-The Number Data Type
+    var a = 25;
+    var b = 80.5;
+    var c = 4.25e+6;
+    var d = 4.25e-6;
+    
+    // Printing variable values
+    document.write(a + "<br>");
+    document.write(b + "<br>");
+    document.write(c + "<br>");
+    document.write(d);
+
+    // Infinity
+    document.write(16 / 0); // Output: Infinity
+    document.write("<br>");
+    document.write(-16 / 0); // Output: -Infinity
+    document.write("<br>");
+    document.write(16 / -0); // Output: -Infinity
+
+    // NaN
+    document.write("Some text" / 2);
+    document.write("<br>");
+    document.write("Some text" / 2 + 10);
+    document.write("<br>");
+    document.write(Math.sqrt(-1));
+    </script>
+</body>
+</html>

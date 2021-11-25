@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function data type</title>
+</head>
+<body>
+    <script>
+        // 7- The Function Data Type
+    // The function is callable object that executes a block of code. Since functions are objects,
+    //  so it is possible to assign them to variables, as shown in the example below:
+    var greeting = function(){ 
+        return "Hello World!"; 
+    }
+     
+    // Check the type of greeting variable
+    document.write(typeof greeting) // Output: function
+    document.write("<br>");
+    document.write(greeting());     // Output: Hello World!
+
+// Functions can be stored in variables, objects, and arrays. Functions can be passed as arguments to other functions
+// and functions can be returned from functions. Consider the following function
+    function createGreeting(name){
+        return "Hello, " + name;
+    }
+    function displayGreeting(greetingFunction, userName){
+        return greetingFunction(userName);
+    }
+     
+    var result = displayGreeting(createGreeting, "Peter");
+    document.write(result); // Output: Hello, Peter
+    </script>
+</body>
+</html>
