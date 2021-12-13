@@ -2,7 +2,7 @@
  var name;
 
  // saiser 
- name = "reda";
+ name = "med";
  // treatment 
  for(i = 1; i <= 5; i++){
 
