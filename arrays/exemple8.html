@@ -5,23 +5,17 @@
     <title>JavaScript Add or Remove Array Elements at any Index</title>
 </head>
 <body>
+    <p id="demo1"></p>
+    <P id="demo2"></P>
     <script>
-    var colors = ["Red", "Green", "Blue"];
-    var removed = colors.splice(0,1); // Remove the first element
-     
-    document.write(colors + "<br>"); // Prints: Green,Blue
-    document.write(removed + "<br>"); // Prints: Red (one item array)
-    document.write(removed.length + "<br>"); // Prints: 1
-     
-    removed = colors.splice(1, 0, "Pink", "Yellow"); // Insert two items at position one
-    document.write(colors + "<br>"); // Prints: Green,Pink,Yellow,Blue
-    document.write(removed + "<br>"); // Empty array
-    document.write(removed.length + "<br>"); // Prints: 0
-     
-    removed = colors.splice(0, 1, "Purple", "Voilet"); // Insert two values, remove one
-    document.write(colors + "<br>"); //Prints: Green,Purple,Voilet,Yellow,Blue
-    document.write(removed + "<br>"); // Prints: Pink (one item array)
-    document.write(removed.length); // Prints: 1
+         const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        document.getElementById("demo1").innerHTML = fruits;
+// The first parameter (2) defines the position where new elements should be added (spliced in).
+
+// The second parameter (0) defines how many elements should be removed.
+
+      fruits.splice(2, 0, "Lemon", "Kiwi");
+      document.getElementById("demo2").innerHTML = fruits;
     </script>
-</body>
+</body> 
 </html>
