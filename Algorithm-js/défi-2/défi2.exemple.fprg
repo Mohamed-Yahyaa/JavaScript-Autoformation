@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-16 03:25:11 PM"/>
+        <attribute name="created" value="U29saWNvZGU7REVTS1RPUC1VSjFJM0ZLOzIwMjEtMTItMTY7MDE6MDQ6MDEgUE07MzE0Mw=="/>
+        <attribute name="edited" value="U29saWNvZGU7REVTS1RPUC1VSjFJM0ZLOzIwMjEtMTItMTY7MDM6MjU6MTEgUE07MTszMjU3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="found" type="Boolean" array="False" size=""/>
+            <assign variable="found" expression="false"/>
+            <declare name="myArray" type="String" array="True" size="5"/>
+            <assign variable="myArray[0]" expression="&quot;bleu&quot;"/>
+            <assign variable="myArray[1]" expression="&quot;red&quot;"/>
+            <assign variable="myArray[2]" expression="&quot;yellow&quot;"/>
+            <assign variable="myArray[3]" expression="&quot;black&quot;"/>
+            <assign variable="myArray[4]" expression="&quot;white&quot;"/>
+            <declare name="userinput" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <input variable="userinput"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <if expression="userinput=myArray[i]">
+                    <then>
+                        <assign variable="found" expression="true"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="found">
+                <then>
+                    <output expression="&quot;it exists&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;it doesn't exist&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
