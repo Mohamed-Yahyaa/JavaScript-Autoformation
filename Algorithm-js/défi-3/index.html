@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // declarations des variables
+        var listNumber ;
+        var MaxValue ;
+        // saizer
+         listNumber = ["5", "15" , "25" , "56" , "78"];
+         MaxValue = listNumber [0];
+        //  traitment
+        for(i=0 ; i< listNumber.length ; i++){
+            if(listNumber[i] >= MaxValue)
+            MaxValue = listNumber[i]
+        }
+        alert( "the maximale value " + MaxValue + " posetion " + listNumber.indexOf(MaxValue)
+        )
+
+        
+        
+
+
+
+    </script>
+    
+</body>
+</html>
