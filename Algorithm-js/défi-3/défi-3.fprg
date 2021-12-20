@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Solicode"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-12-17 12:50:02 PM"/>
+        <attribute name="created" value="U29saWNvZGU7REVTS1RPUC1VSjFJM0ZLOzIwMjEtMTItMTc7MTA6MTg6MjkgQU07MzE0NA=="/>
+        <attribute name="edited" value="U29saWNvZGU7REVTS1RPUC1VSjFJM0ZLOzIwMjEtMTItMTc7MTI6NTA6MDIgUE07MTszMjU2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="listNumber" type="Integer" array="True" size="7"/>
+            <declare name="MaxValue" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="listNumber[0]" expression="5"/>
+            <assign variable="listNumber[1]" expression="10"/>
+            <assign variable="listNumber[2]" expression="15"/>
+            <assign variable="listNumber[3]" expression="20"/>
+            <assign variable="listNumber[4]" expression="25"/>
+            <assign variable="listNumber[5]" expression="30"/>
+            <assign variable="listNumber[6]" expression="98"/>
+            <assign variable="MaxValue" expression="listNumber[0]"/>
+            <for variable="i" start="0" end="6" direction="inc" step="1">
+                <if expression="listNumber[i] &gt;= MaxValue">
+                    <then>
+                        <assign variable="MaxValue" expression="listNumber[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="MaxValue" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
